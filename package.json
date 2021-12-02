@@ -1,0 +1,23 @@
+{
+  "name": "taaruf-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tataredhaalfath/taaruf-app-js.git"
+  },
+  "author": "redha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tataredhaalfath/taaruf-app-js/issues"
+  },
+  "homepage": "https://github.com/tataredhaalfath/taaruf-app-js#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
