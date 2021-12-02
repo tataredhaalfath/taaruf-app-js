@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 const expressLayout = require("express-ejs-layouts");
-
+const AdminRoutes = require("./routes/AdminRoutes");
 //view engine ejs
 app.set("view engine", "ejs");
 app.use(expressLayout);
@@ -50,6 +50,8 @@ app.get("/taaruf/success", (req, res) => {
   });
 });
 
+// route admin
+app.use(AdminRoutes);
 app.listen(5000, () => {
   console.log("server listen at http://localhost:5000");
 });
