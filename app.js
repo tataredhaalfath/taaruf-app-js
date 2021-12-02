@@ -19,6 +19,12 @@ app.get("/", (req, res) => {
     title: "home page",
   });
 });
+app.get("/stories", (req, res) => {
+  res.render("pages/stories", {
+    layout: "layouts/main-layouts",
+    title: "Stories Page",
+  });
+});
 app.get("/taaruf", (req, res) => {
   res.render("pages/taaruf", {
     layout: "layouts/main-layouts",
@@ -37,6 +43,13 @@ app.get("/taaruf/detail/check", (req, res) => {
     title: "Check Page",
   });
 });
+app.get("/taaruf/success", (req, res) => {
+  res.render("pages/success", {
+    layout: "layouts/check-layouts",
+    title: "Success",
+  });
+});
+
 app.listen(5000, () => {
   console.log("server listen at http://localhost:5000");
 });
