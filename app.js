@@ -25,6 +25,18 @@ app.get("/taaruf", (req, res) => {
     title: "Taaruf Page",
   });
 });
+app.get("/taaruf/detail", (req, res) => {
+  res.render("pages/detail", {
+    layout: "layouts/main-layouts",
+    title: "Detail Page",
+  });
+});
+app.get("/taaruf/detail/check", (req, res) => {
+  res.render("pages/check", {
+    layout: "layouts/check-layouts",
+    title: "Check Page",
+  });
+});
 app.listen(5000, () => {
   console.log("server listen at http://localhost:5000");
 });
