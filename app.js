@@ -19,7 +19,12 @@ app.get("/", (req, res) => {
     title: "home page",
   });
 });
-
+app.get("/taaruf", (req, res) => {
+  res.render("pages/taaruf", {
+    layout: "layouts/main-layouts",
+    title: "Taaruf Page",
+  });
+});
 app.listen(5000, () => {
   console.log("server listen at http://localhost:5000");
 });
