@@ -1,7 +1,7 @@
-##how to run project
+## how to run project
 
-###install all package
+### install all package
 - npm install
 
-###run project
+### run project
 - npm run start
