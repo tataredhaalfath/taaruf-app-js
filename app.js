@@ -3,6 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const expressLayout = require("express-ejs-layouts");
 const AdminRoutes = require("./routes/AdminRoutes");
+// const bodyParsre = require("body-parser");
 //view engine ejs
 app.set("view engine", "ejs");
 app.use(expressLayout);
@@ -11,7 +12,8 @@ app.use(morgan("dev"));
 //static folder
 app.use(express.static("public"));
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
+// app.use(bodyParsre.json());
 //route
 app.get("/", (req, res) => {
   res.render("pages/home", {
